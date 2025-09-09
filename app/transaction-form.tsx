@@ -76,7 +76,7 @@ export default function TransactionFormScreen() {
         </View>
         <Space size={16} />
         <DropDown
-          label="Kategorinkdje"
+          label="Kategori"
           value={category}
           onCancel={handleCancelCategory}
           onChange={handleSaveCategory}
