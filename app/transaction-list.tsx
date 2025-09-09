@@ -9,7 +9,15 @@ export default function TransactionListScreen() {
   const list = useSelector((state) => state.transaction.list);
 
   const renderItem = ({ item }) => (
-    <View style={{ padding: 12, backgroundColor: Colors.primaryLight }}>
+    <View
+      style={{
+        padding: 12,
+        backgroundColor: Colors.primaryLight,
+        borderWidth: 1,
+        borderColor: Colors.secondary,
+        borderRadius: 4,
+      }}
+    >
       <Text>{item.type || "-"}</Text>
       <View style={{ flexDirection: "row" }}>
         <Text>Amount: </Text>
